@@ -18,6 +18,7 @@ import { createLogger } from 'redux-logger';
 import ReduxThunk from 'redux-thunk';
 import HeaderContainer from '../containers/HeaderContainer';
 import CheckoutContainer from '../containers/CheckoutContainer';
+import Chat from '../components/Chat';
 
 const logger = createLogger(); 
 
@@ -40,6 +41,7 @@ class App extends Component {
                         <Route exact path="/" component={Home} />
                         <Route path="/products" component={Home} />
                         <Route path="/admin" component={Admin}/>
+                        <Route path="/chat" component={Chat}/>
                         <Route path="/join" component={Join} />
                         {/*<Route path="/login" component={Login} />*/}
                         <Route path="/login" component={LoginContainer}/>

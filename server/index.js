@@ -112,3 +112,8 @@ const server = app.listen(port, () => {
     console.log('Express listening on port', port);
 })
 
+import { listen } from 'socket.io';
+import socketConnection from './libs/socketConnection';
+
+const io = listen(server);
+socketConnection(io);
